@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Time</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="assets/style/style.css">
+	
+	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+
+	
+
+</head>
+<body>
+	<div class="jumbotron">
+		<h1>Anytime is Train Time</h1>
+		<h3>Choo choo. Chee chee</h3>
+	</div>
+
+	<div class="container" id="schedule">
+		<div class="row" id="scheduleHeader">
+			<p>Current Train Schedule</p>
+		</div>
+		<div class="row">
+			<table id="trainInfo">
+				
+				
+			</table>
+		</div>
+
+
+	</div>
+
+	<div class="container" id="addTrain">
+		<div class="row" id="addHeader">
+			<p id="addT">Add Train</p>			
+		</div>
+		<div class="row" id="addBody">
+			<div>
+				<p>Train Name:</p>
+				<input type="text" class="form-control" id="trainName">
+				<p>Destination:</p>
+				<input type="text" class="form-control" id="destination">
+				<p>First Train Time (HH:mm - military time)</p>
+				<input type="text" class="form-control" id="firstTrainTime">
+				<p>Frequency (min)</p>
+				<input type="text" class="form-control" id="frequency">
+				<button type="button" class="btn btn-primary">Submit</button>
+			</div>
+		</div>
+	</div>
+
+
+<script src="assets/logic/logic.js"></script>
+</body>
+</html>

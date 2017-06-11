@@ -1,0 +1,53 @@
+.jumbotron, #name {
+	text-align: center;
+}
+
+#schedule {
+	width: 95%;
+	outline: 2px solid #7b52fc;
+	margin-bottom: 20px;
+}
+
+#addTrain {
+	width: 95%;
+	outline: 2px solid #7b52fc;
+	margin-bottom: 20px;
+}
+
+#addHeader, #scheduleHeader {
+	background-color: #7b52fc;
+	color: white;
+}
+
+p {
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.form-control {
+	width: 90%;
+	margin-left: 20px;
+}
+
+#frequency {
+	margin-bottom: 20px;
+}
+
+#addT {
+	margin-top: 10px;
+}
+
+table {
+	width: 90%;
+	border-collapse: collapse;
+	margin-left: 10px;
+}
+
+td {
+	border-top: 1px solid #a49bc2;
+
+}
+
+th {
+	margin-bottom: 10px;
+}

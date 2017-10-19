@@ -103,17 +103,16 @@ $(document).ready(function(){
     var name = $("#trainName").val().trim();
     var destination = $("#destination").val().trim();
     var frequency = $("#frequency").val().trim();
-    var firstTrainTime = $("#firstTrainTime").val().trim()
     //use the train constructor to create a new train with the values
     var nextTrain = new Train(name, destination, frequency);
     //add to train array
-    trainList.push(nextTrain);
-    //re-render the trainInfo div with new train's info
-    addInfo();
+    //trainList.push(nextTrain);
     //add to database
     database.ref("/userAddedTrains").push({
       nextTrain: nextTrain
     });
+    //re-render the trainInfo div with new train's info
+    addInfo();
     return false;
   });
 });

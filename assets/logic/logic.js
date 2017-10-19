@@ -116,11 +116,4 @@ $(document).ready(function(){
     });
     return false;
   });
-
-  database.ref("/userAddedTrains").on("value", function(snap) {
-    if (snap.child("-KYzjrAeHTK5TjOfgI2_").exists()) {
-      console.log("Added");
-      console.log(snap);
-    }
-  });
 });

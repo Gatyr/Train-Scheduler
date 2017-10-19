@@ -23,20 +23,6 @@ $(document).ready(function(){
   }
   //calculate next arrival time
   function nextArrivalTime(train) {
-    // var frequency = train.frequency;
-    // var firstTime = train.firstTrainTime;
-    // //take the first time the train is supposed to arrive, and 
-    // //convert it using the Moment.js library
-    // var firstTimeConverted = moment(firstTime, 'hh:mm');
-    // //set the difference equal to the difference between the current
-    // //time and when the train is supposed to arrive
-    // var difference = moment().diff(moment(firstTimeConverted), 'minutes');
-    // //find the time until next train by taking remainder of difference 
-    // //divided by frequency and subtract that from the frequency for the train
-    // var timeRemainder = difference % frequency;
-    // var timeTillTrain = frequency - timeRemainder;
-    // //find next arrival by taking current time and adding timeTillTrain
-    // //then convert it with moment.js library
     let timeTillTrain = minutesAway(train);
     var nextArrival = moment().add(timeTillTrain, 'minutes').format('hh:mm');
     return nextArrival;
